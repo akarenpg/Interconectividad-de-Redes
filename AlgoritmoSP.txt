@@ -1,0 +1,14 @@
+Este algoritmo se ejecuta en cada switch para elegir el Root Bridge (puente raíz), determinar los costos de ruta y desactivar los puertos redundantes.
+
+Algoritmo_STP():
+    Para cada switch S en la red:
+        Bridge_ID(S) = Prioridad + Dirección_MAC_local(S)
+        Root_Bridge = S  // Inicialmente cada switch se cree raíz a sí mismo
+        Root_Path_Cost = 0
+        Root_Port = NULO
+
+Ciclos
+
+    Mientras la red esté activa:
+        Enviar BPDU (Bridge Protocol Data Unit) con:
+            - Mi Bridge ID
