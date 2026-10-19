@@ -12,3 +12,5 @@ Ciclos
     Mientras la red esté activa:
         Enviar BPDU (Bridge Protocol Data Unit) con:
             - Mi Bridge ID
+
+Prueba
